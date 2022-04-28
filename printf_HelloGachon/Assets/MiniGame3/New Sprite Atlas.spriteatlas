@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+    totalSpriteSurfaceArea: 6912
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1936377619914286899, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 5484665776209529286, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -1155953516840535691, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -4000682903155962518, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 6274815642165856912, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 7111256833501487726, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 1204484245211294477, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 7705230538424458014, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -8113659986111236630, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 5302428387525635763, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -7382170329917614130, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -4402720331934107603, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 6937594313223396644, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -7896608075707334532, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -2274625710027227803, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -7300940504804071258, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 6462403707142872902, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 2136056325927348113, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 4999233774744407302, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -1800218853766089766, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -1940616054110203528, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 5177335956514350003, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -2346117320216730357, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 7661904891625785457, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -4671411596978718998, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: 7882198902572613041, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  - {fileID: -1705017808814874805, guid: c75646c943df746669e7e67bccbf2bad, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - vscode_4
+  - vscode_5
+  - vscode_6
+  - vscode_7
+  - vscode_0
+  - vscode_1
+  - vscode_2
+  - vscode_3
+  - vscode_8
+  - vscode_9
+  - vscode_22
+  - vscode_23
+  - vscode_20
+  - vscode_21
+  - vscode_26
+  - vscode_24
+  - vscode_25
+  - vscode_19
+  - vscode_18
+  - vscode_17
+  - vscode_16
+  - vscode_15
+  - vscode_14
+  - vscode_13
+  - vscode_12
+  - vscode_11
+  - vscode_10
+  m_RenderDataMap: {}
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
