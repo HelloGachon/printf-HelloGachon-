@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: 6951783785704475409
     second: mudang_2
+  - first:
+      213: -8336238938656286926
+    second: mudang_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,7 +123,7 @@ TextureImporter:
         width: 64
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,12 +139,12 @@ TextureImporter:
       name: mudang_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 0
         width: 64
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,12 +160,12 @@ TextureImporter:
       name: mudang_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 0
-        width: 64
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,6 +173,27 @@ TextureImporter:
       bones: []
       spriteID: 11b4c3e5582b97060800000000000000
       internalID: 6951783785704475409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mudang_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237dc924adabf4c80800000000000000
+      internalID: -8336238938656286926
       vertices: []
       indices: 
       edges: []
