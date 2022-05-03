@@ -22,6 +22,10 @@ public class TypeGameManager : MonoBehaviour
     public InputField inputClassNum;
     public Button applyBtn;
     public Button okBtn;
+    public AudioSource successSound;
+    public AudioSource failedSound;
+    public AudioSource timeoverSound;
+    public AudioSource typeGameBGM;
     public bool isApplyBtn = false;
     public int currentClassNum;
     public int successCnt = 0;
@@ -33,7 +37,7 @@ public class TypeGameManager : MonoBehaviour
         ** [구현해야 할 것]
         ** 3번 이상 성공시 성공시간표, 아니면 실패 시간표 부여
         */
-
+        typeGameBGM.Play();
         displayClassNum();
         getSetTime = setTime;
         resetTimer();
@@ -49,6 +53,7 @@ public class TypeGameManager : MonoBehaviour
             if(setTime < 0 && !isApplyBtn)
             {
                 setZero();
+                timeoverSound.Play(); 
                 resultTxt.text = "타임오버!";
                 registerResult.SetActive(true);
                 classNumList.RemoveAt(currentClassNum);
@@ -59,12 +64,14 @@ public class TypeGameManager : MonoBehaviour
                 setZero();
                 if(inputClassNum.text == classNumList[currentClassNum].classNum)
                 {
-                    resultTxt.text = "성공!";
+                    successSound.Play();
+                    resultTxt.text = "성공!";                    
                     successCnt++;
                 }
                 else
                 {
-                    resultTxt.text = "실패!";   
+                    failedSound.Play(); 
+                    resultTxt.text = "실패!";
                 }
 
                 registerResult.SetActive(true);
@@ -78,6 +85,7 @@ public class TypeGameManager : MonoBehaviour
         }
         else
         {
+            typeGameBGM.Stop();
             classNumTxt.text = "";
             if(successCnt > 3)
             {
