@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public DialManager dialManager;
+    public Button dialBtn;
     public Text dialText;
+    int count = 0;
 
-    public void setText()
+    public void BtnOnClick()
     {
-        dialText.text = "dialogue changed";
+        dialText.text = dialManager.GetDial(count);
+        count++;
     }
 }
