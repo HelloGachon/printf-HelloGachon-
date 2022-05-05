@@ -8,7 +8,7 @@ public class TopViewManager : MonoBehaviour
     public Image fadeImage;
     public Sprite changeImage;
     public Text talking;
-    public TalkManager talkmanager;
+    public TalkManager2 talkmanager;
     public GameObject Npc;
     public GameObject talkingPanel;
     public bool isTalk;
