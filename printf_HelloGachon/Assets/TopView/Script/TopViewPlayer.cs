@@ -112,6 +112,10 @@ public class TopViewPlayer : MonoBehaviour
             case "A":
                 if(scanObject!=null)
                     manager.TalkingAction(scanObject);
+                else if(manager.isStart)
+                {
+                    manager.startTopView();
+                }
                 break;
         }
     }

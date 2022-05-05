@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class GroupPlayerAction : MonoBehaviour
 {
     // Start is called before the first frame update
-   public GroupManager manager;
+    public GroupManager manager;
+   
     float h=0;
     float v=0;
     Rigidbody2D rigid;
@@ -29,6 +30,7 @@ public class GroupPlayerAction : MonoBehaviour
     void Awake(){
         rigid=GetComponent<Rigidbody2D>();
         anim=GetComponent<Animator>();
+        
     }
     void Update(){
         h=manager.isGroup ? 0 :rightValue+leftValue;
@@ -114,6 +116,10 @@ public class GroupPlayerAction : MonoBehaviour
             case "A":
                 if(scanObject!=null)
                     manager.GroupAction(scanObject);
+                else if(manager.startTalk)
+                {
+                    manager.StartAction();
+                }
                 break;
         }
     }
