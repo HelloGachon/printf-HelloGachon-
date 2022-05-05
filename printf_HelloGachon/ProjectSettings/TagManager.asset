@@ -6,9 +6,6 @@ TagManager:
   tags:
   - Object
   - Soju
-  - Music
-  - Freedom
-  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,9 +16,6 @@ TagManager:
   - 
   - 
   - Object
-  - Object
-  - 
-  - 
   - 
   - 
   - 
