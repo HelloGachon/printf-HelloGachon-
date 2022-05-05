@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class TopViewPlayer : MonoBehaviour
-{
-    
+public class MudangAction : MonoBehaviour
+{    
     float h;
     float v;
 
@@ -72,7 +71,8 @@ public class TopViewPlayer : MonoBehaviour
                 manager.Action(scanObject);
             }else if(manager.objectDetect){
                 manager.TestSub();
-            }           
+            }
+           
         }
     }
     void FixedUpdate() {
