@@ -3,11 +3,6 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Object
-  - Soju
-  - Music
-  - Freedom
   tags: []
   layers:
   - Default
@@ -16,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Object
+  - 
   - 
   - 
   - 
