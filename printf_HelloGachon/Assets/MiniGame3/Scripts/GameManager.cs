@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public DialManager dialManager;
     public Button dialBtn;
+    public Image repeatBtn;
     public Text dialText;
     public InputField funcType;
     public InputField funcName;
@@ -76,13 +77,9 @@ public class GameManager : MonoBehaviour
             funcBody.text = "";
             break;
 
-            // case 11:
-            // funcType.interactable = true;
-            // funcName.interactable = true;
-            // paramType.interactable = true;
-            // paramName.interactable = true;
-            // funcBody.interactable = true;
-            // break;
+            case 11:
+            repeatBtn.gameObject.SetActive(false);
+            break;
 
             case 12:
             string funcBodySpaceRemove = funcBody.text.Replace(" ","");
@@ -95,6 +92,7 @@ public class GameManager : MonoBehaviour
                 break;
             } else
             {
+                repeatBtn.gameObject.SetActive(true);
                 dialText.text = "흠.. 코드를 다시 한 번 살펴볼까?";
                 count -= 2;
             }
@@ -110,5 +108,12 @@ public class GameManager : MonoBehaviour
         #else
         Application.Quit();
         #endif
+    }
+
+    public void RepeatBtnOnClick()
+    {
+        repeatBtn.gameObject.SetActive(false);
+        count = 2;
+        BtnOnClick();
     }
 }
