@@ -8,6 +8,7 @@ TagManager:
   - Soju
   - Music
   - Freedom
+  tags: []
   layers:
   - Default
   - TransparentFX
