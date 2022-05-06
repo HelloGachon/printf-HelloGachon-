@@ -18,3 +18,10 @@ EditorBuildSettings:
     path: Assets/GroupSelect/Scene/Freedom.unity
     guid: ebb0a94fb28da5645a64a4c01f559ee5
   m_configObjects: {}
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: cedbbe0cd309a5048a8c6da7f642bf47, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 40b2b078ed00c1d4fba1ea69ea892da7, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 889e303e043b1a14190aa9592e482ffd, type: 2}
