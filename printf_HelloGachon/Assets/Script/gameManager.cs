@@ -22,12 +22,17 @@ public class gameManager : MonoBehaviour
     public Image portraitImg;
     public GameObject cmVcam;   // cm카메라 오브젝트
     private int num=0;
+    public GameObject heetalkPanel3; // 무당이 예/ 아니오 판넬
+    public GameObject heenewStu; //newStu 오브젝트
+    public GameObject heemudang; //mudang 오브젝트
+    private Rigidbody2D rb2;
+    
 
 
   
     void Awake() {
         cmCamera = cmVcam.GetComponent<CinemachineVirtualCamera>();
-       
+        rb2 = heemudang.GetComponent<Rigidbody2D>();
         Debug.Log(questManager.CheckQuest());
     }
 
@@ -37,7 +42,7 @@ public class gameManager : MonoBehaviour
 
 
     public void TestSub(){
-        string talkData2 = talkManager.GetTalk(7000, talkIndex);
+        string talkData2 = talkManager.GetTalk(7000, talkIndex); //처음에 게임 시작 전에 인트로가 나올 수 있도록 구성
 
         //End Talk
         if(talkData2 ==null){
@@ -100,7 +105,7 @@ public class gameManager : MonoBehaviour
  //마우스 클릭시 퀘스트 마크가 팝업
     public void questionMark1(){
         talkPanel2.SetActive(true);
-        talkText2.text = "무당이를 타면 더 빨리 이동할 수 있습니다.";
+        talkText2.text = "무당이를 타면 더 빨리 이동할 수 있습니다. 탑승 후 내리고 싶을 때 상단 초록색 버튼을 클릭하면 됩니다.";
        
     }
  //마우스 클릭 후 떼어낼때 퀘스트 마크가 팝다운
@@ -111,7 +116,19 @@ public class gameManager : MonoBehaviour
     }
 //마우스 클릭시 무당이를 내림
     public void noneMudang(){
+        var mudangAction = heemudang.GetComponent<MudangAction>();
+        Vector3 pos2;
+        pos2 = this.heemudang.transform.position;
         mudangDown.SetActive(false);
+        heetalkPanel3.SetActive(false);
+
+        heenewStu.SetActive(true);
+        SetCameraTarget(heenewStu);
+
+        mudangAction.enabled = false;
+
+        rb2.constraints = RigidbodyConstraints2D.FreezeAll;
+        heenewStu.transform.position = new Vector3(pos2.x+3,pos2.y+3, 0);
     }
 
 

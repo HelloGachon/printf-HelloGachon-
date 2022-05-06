@@ -15,12 +15,14 @@ public class QuestManager : MonoBehaviour
         GenerateData();
     }
 
-    // 퀘스트 생성
+    // 퀘스트 생성 - 퀘스트 코드 공유하기!!
     void GenerateData()
     {
         questList.Add(10, new QuestData("npc들과 대화하기.", new int[]{1000, 2000}));
         questList.Add(20, new QuestData("오리엔테이션 하러가기", new int[]{2000, 5000, 500}));
         questList.Add(30, new QuestData("오리엔테이션 끝나고 뒷풀이 참석하기", new int[]{2000, 1000}));
+        questList.Add(40, new QuestData("간식행사 하러가기", new int[]{2000, 5000, 500}));
+        questList.Add(50, new QuestData("종강파티 하러가기", new int[]{2000, 5000, 500}));
     }
 
     public int GetQuestTalkIndex(int id)
@@ -63,21 +65,21 @@ public class QuestManager : MonoBehaviour
     //퀘스트에서 사용하는 오브젝트 관리!!
     void ControlObject()
     {
-        switch (questId)
-        {
-            case 10: 
-                if(questActionIndex ==1 ){
-                    questObject[0].SetActive(true);
-                }else if(questActionIndex ==2){
-                    questObject[0].SetActive(false);
-                }
+        // switch (questId)
+        // {
+        //     case 10: 
+        //         if(questActionIndex ==1 ){
+        //             questObject[0].SetActive(true);
+        //         }else if(questActionIndex ==2){
+        //             questObject[0].SetActive(false);
+        //         }
                                    
-                break;
-            case 20:
-                if(questActionIndex ==1)
-                    questObject[0].SetActive(false);
-                break;
+        //         break;
+        //     case 20:
+        //         if(questActionIndex ==1)
+        //             questObject[0].SetActive(false);
+        //         break;
 
-        }
+        // }
     }
 }

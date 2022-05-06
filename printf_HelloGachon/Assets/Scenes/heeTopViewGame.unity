@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fa835b7de60584194b240a18edb284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   manager: {fileID: 1828721397}
 --- !u!95 &15910326
 Animator:
@@ -78276,6 +78276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mudangYesOrNo
       objectReference: {fileID: 0}
+    - target: {fileID: 2470861323593719396, guid: d25f6ad689179cd4382c498161555da5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2470861323593719397, guid: d25f6ad689179cd4382c498161555da5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -78457,6 +78461,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestMark
       objectReference: {fileID: 0}
+    - target: {fileID: 2659578477775720014, guid: 2b14369dfdc7b734b881bde9b70d3b1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659578478111789634, guid: 2b14369dfdc7b734b881bde9b70d3b1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2659578478111789659, guid: 2b14369dfdc7b734b881bde9b70d3b1c, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -78561,11 +78573,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3109719486038569032, guid: 5226c5d351b5ead43b62545475de471f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.81
+      value: -35.71
       objectReference: {fileID: 0}
     - target: {fileID: 3109719486038569032, guid: 5226c5d351b5ead43b62545475de471f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.9
+      value: 6.85
       objectReference: {fileID: 0}
     - target: {fileID: 3109719486038569032, guid: 5226c5d351b5ead43b62545475de471f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -78603,6 +78615,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1828721397}
+    - target: {fileID: 3109719486038569037, guid: 5226c5d351b5ead43b62545475de471f, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3109719486038569046, guid: 5226c5d351b5ead43b62545475de471f, type: 3}
       propertyPath: m_Name
       value: mudang
@@ -78673,6 +78689,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1283177805}
     - target: {fileID: 3192632658112568647, guid: 7ffcfe574aa9397449c829e87b22e71e, type: 3}
+      propertyPath: heemudang
+      value: 
+      objectReference: {fileID: 981616910}
+    - target: {fileID: 3192632658112568647, guid: 7ffcfe574aa9397449c829e87b22e71e, type: 3}
+      propertyPath: heenewStu
+      value: 
+      objectReference: {fileID: 15910324}
+    - target: {fileID: 3192632658112568647, guid: 7ffcfe574aa9397449c829e87b22e71e, type: 3}
       propertyPath: talkPanel
       value: 
       objectReference: {fileID: 225741476}
@@ -78700,6 +78724,10 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1041393827}
+    - target: {fileID: 3192632658112568647, guid: 7ffcfe574aa9397449c829e87b22e71e, type: 3}
+      propertyPath: heetalkPanel3
+      value: 
+      objectReference: {fileID: 193483697}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ffcfe574aa9397449c829e87b22e71e, type: 3}
 --- !u!1001 &5466626457744386969
@@ -78712,6 +78740,10 @@ PrefabInstance:
     - target: {fileID: 5466626457886488616, guid: 3b6cea1d8f3f92c4fa4c6f6b4f01ebb6, type: 3}
       propertyPath: m_Name
       value: mudangQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466626457886488616, guid: 3b6cea1d8f3f92c4fa4c6f6b4f01ebb6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5466626457886488619, guid: 3b6cea1d8f3f92c4fa4c6f6b4f01ebb6, type: 3}
       propertyPath: m_Pivot.x
@@ -78779,11 +78811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5466626457886488619, guid: 3b6cea1d8f3f92c4fa4c6f6b4f01ebb6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5466626457886488619, guid: 3b6cea1d8f3f92c4fa4c6f6b4f01ebb6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 5466626457886488619, guid: 3b6cea1d8f3f92c4fa4c6f6b4f01ebb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -36,7 +36,7 @@ public class TalkManager : MonoBehaviour
     //대화 생성하기
    void GenerateData(){
 
-       //things
+       //things 
        talkData.Add(100, new string[] {"이것은 나무다."});
        talkData.Add(200, new string[] {"이것은 부쉬다."});
        talkData.Add(300, new string[] {"이것은 인피니티 동상이다."});
@@ -70,15 +70,16 @@ public class TalkManager : MonoBehaviour
 
 
        //Quest Talk(퀘스트 넘버 + npc 넘버)
-       //Quest_1 1월
-       
+       //Quest_1 1월      
        talkData.Add(10+ 1000, new string[] {"잘 찾아왔어!!:2","AI공학관 앞에 가서 선배님께 인사드려!!:0"});
-    //    talkData.Add(11+3000, new string[] {"탑승하시겠습니까?"});
        talkData.Add(11+ 2000, new string[] {"오 왔니?:2", "앞으로 학교 생활에 도움을 줄게!!:0", "가천대 컴퓨터공학과에 온걸 진심으로 환영해!!:2"});
 
        //Quest_2 오리엔테이션
        talkData.Add(20+ 2000, new string[] {"AI공학관에 들어가면 오리엔테이션을 진행할거야! :0"});
        talkData.Add(21+ 2000, new string[] {"바로 앞이 AI공학관이야:0"});
+
+       //Quest_3 간식행사
+        
 
        //portrait Data
        portraitData.Add(7000+0,portraitArr[0]); //플레이어 및 인트로에 쓰일 선배와 친구
@@ -183,10 +184,12 @@ public class TalkManager : MonoBehaviour
        return portraitData[id+portraitIndex];
    }
 
-//무당이를 탑승하고 갈 때
+//무당이를 탈 것인지 안 탈 것인지 물어보는 함수
    public void SelectTalk(string type){
 
        var mudangAction = mudang.GetComponent<MudangAction>();
+       Vector3 pos;
+       pos = this.mudang.transform.position;
        switch(type){
            case "y": 
                 talkPanel3.SetActive(false);
@@ -202,12 +205,7 @@ public class TalkManager : MonoBehaviour
 
                 break;
            case "n":  
-                // talkPanel3.SetActive(false);
-                // newStu.SetActive(true);
-                // gameManager.SetCameraTarget(newStu);
-                // mudangAction.enabled = false;
-                // rb.constraints = RigidbodyConstraints2D.FreezeAll;
-                // newStu
+
                 break;    
        }
    }
